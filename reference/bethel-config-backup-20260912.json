@@ -1,0 +1,71 @@
+{
+  "date": "2026-09-12",
+  "note": "Bethel BBSHD stock config backup (read-only dump)",
+  "info": {
+    "raw": "51 10 53 5a 42 46 42 42 53 33 31 34 31 30 30 34 02 1e ea",
+    "manufacturer": "SZBF",
+    "model": "BBS3",
+    "hw_version": "14",
+    "fw_version": "1004",
+    "voltage_class": "48V",
+    "max_current_A": 30
+  },
+  "basic": {
+    "raw": "52 18 2a 1e 01 04 08 0e 16 20 2c 3a 4a 64 01 64 64 64 64 64 64 64 64 64 38 01 d5",
+    "low_battery_protect_V": 42,
+    "current_limit_A": 30,
+    "assist_current_pct": [
+      1,
+      4,
+      8,
+      14,
+      22,
+      32,
+      44,
+      58,
+      74,
+      100
+    ],
+    "assist_speed_pct": [
+      1,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "wheel_diameter": "28\" (raw 0x38)",
+    "speedmeter_model": "external",
+    "speedmeter_signals": 1,
+    "checksum_ok": true
+  },
+  "pedal": {
+    "raw": "53 0b 03 ff ff 01 01 05 ff 0a 08 01 64 dc",
+    "pedal_type": "double-signal-24",
+    "designated_assist": "display",
+    "speed_limit": "display",
+    "start_current_pct": 1,
+    "slow_start_mode": 1,
+    "startup_degree": 5,
+    "work_mode": 255,
+    "time_of_stop_x10ms": 10,
+    "current_decay": 8,
+    "stop_decay_x10ms": 1,
+    "keep_current_pct": 100,
+    "checksum_ok": true
+  },
+  "throttle": {
+    "raw": "54 06 0b 2a 01 09 ff 01 99",
+    "start_voltage_x100mV": 11,
+    "end_voltage_x100mV": 42,
+    "mode": "current",
+    "designated_assist": 9,
+    "speed_limit": "display",
+    "start_current_pct": 1,
+    "checksum_ok": true
+  }
+}

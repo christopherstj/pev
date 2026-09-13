@@ -1,0 +1,11 @@
+# build artifacts
+firmware/.pio/
+firmware/.vscode/
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+# generated
+out/
