@@ -1,0 +1,28 @@
+# bench project config — lives next to platformio.ini so it travels with the firmware.
+[project]
+name = "bethel-body"
+firmware_dir = "."
+pio_env = "esp32-s3-devkitc-1"
+default_board = "bethel-body"
+
+[ver]
+serial_baud = 115200
+prompt = "?ver"
+timeout_s = 3
+
+[gates]
+# Flip to true once `bench test --host` exists (Phase 3); today it would block every flash.
+require_host_tests_before_flash = false
+host_tests_max_age_min = 60
+require_measured_voltage_note = false
+block_flash_if_dirty = false
+
+[serial]
+# CH343 bridge on this devkit; cooldown to be measured, CH340-family default until then.
+patient_open_cooldown_s = 15
+patient_open_attempts = 6
+never_hammer = true
+
+[wire]
+parts_dir = "../../bench/parts"
+out_dir = "out/wire"
