@@ -18,8 +18,10 @@ require_measured_voltage_note = false
 block_flash_if_dirty = false
 
 [serial]
-# CH343 bridge on this devkit; cooldown to be measured, CH340-family default until then.
-patient_open_cooldown_s = 15
+# CH343 bridge (VID 1A86 PID 55D3). Measured 2026-09-13: six back-to-back re-opens
+# with 0-5 s gaps all succeeded, so the CH340 15 s rule does not apply here.
+# 2 s is a safety margin, not a requirement.
+patient_open_cooldown_s = 2
 patient_open_attempts = 6
 never_hammer = true
 
