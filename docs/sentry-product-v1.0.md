@@ -21,6 +21,8 @@ Origin story (use once, in README, never perform it): founder's headlights were 
 * Concept validation / competition (important corrections): Tarran L1 (new premium e-bike) ships integrated Sentry Mode + locking SyncStand + camera add-on — validates demand, starts the OEM clock (~3–5 yr differentiation window on new bikes). Sentidrive Sentinelle does aftermarket camera-sentry for motorcycles. Nobody does retrofit e-bike sentry with on-device ML. Confidence: high, not certain — sweep Kickstarter/Alibaba/Eurobike lists before serious capital.
 * The installed base never gets OEM features (dashcam precedent) — retrofit demand outlives the differentiation window.
 
+> **Sourced update (2026-09-15, see `market-bafang-installed-base-2026-09.md`):** Bafang's IPO filings document **317,482 BBS + BBSHD motors sold 2015–mid-2019**; a scenario model puts the worldwide *active* BBS-conversion population at roughly **320k–920k (middle ~590k)** at end-2025 — conditional, not measured. Bafang's total mid-drive sales fell from 553k (2021) to 170k (2025), so treat the base as a large *stock* with shrinking inflow. Unverified: US share, BBSHD-only count, UART-vs-CAN split (post-2020 kits can be CAN; the v1 harness is UART), willingness to pay. The "serviceable market ≈ 1–2M US owners" line in §5 is the *e-bike* TAM, not the Bafang beachhead; the beachhead SAM is realistically tens of thousands of reachable US owners.
+
 ## 3. Product pillars (from spec v0.1, updated)
 
 1. Deter — 110dB siren; visible deterrence screen (e-paper/OLED: "⚠ SENTRY ACTIVE — RECORDING" + red LED pulse, wakes on person detection). Deterrence screen is cheap ($8–15 BOM) and disproportionately valuable.
